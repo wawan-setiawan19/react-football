@@ -1,0 +1,24 @@
+.card {
+  flex-basis: calc(25% - 50px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px 0px;
+}
+
+.card-image {
+  text-align: center;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.card-image img {
+  height: 100%;
+}
+
+.card-name {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
