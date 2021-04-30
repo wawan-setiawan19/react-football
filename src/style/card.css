@@ -1,6 +1,6 @@
 .card {
   flex-basis: calc(25% - 50px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   margin: 20px;
   border-radius: 20px;
   padding: 20px 0px;
@@ -17,8 +17,38 @@
 }
 
 .card-name {
-  font-size: 22px;
+  font-size: .7em;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
+}
+
+@media screen and (max-width:770px) {
+  .card {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+  }
+
+  .card-image {
+    height: 150px;
+  }
+
+  .card-name {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .card {
+    flex-basis: calc(50% - 10px);
+    margin: 10px 5px;
+  }
+
+  .card-image {
+    height: 100px;
+  }
+
+  .card-name {
+    font-size: .7em;
+  }
 }
