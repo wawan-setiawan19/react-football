@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../style/main.css'
-import Button from './Button';
 import Card from './Card'
-import SearchBar from './SearchBar';
 
 
 const Main = () => {
