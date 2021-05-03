@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import '../style/main.css'
+import Button from './Button';
 import Card from './Card'
+import SearchBar from './SearchBar';
 
 
 const Main = () => {
@@ -14,7 +16,6 @@ const Main = () => {
     let data = await fetch('https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?s=Soccer&c=Indonesia');
     let response = await data.json();
     setTeams(response.teams)
-    console.log(response.teams);
   }
 
   return (
